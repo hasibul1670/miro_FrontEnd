@@ -3,6 +3,7 @@ import FeatureSection from "./FeatureSection";
 import HeroSection from "./HeroSection";
 import HybridWorkSection from "./HybridWorkSection";
 import TrustedSection from "./TrustedSection";
+import M3Intregation from "./M3Intregation";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <TrustedSection />
       <FeatureSection />
       <HybridWorkSection />
+      <M3Intregation />
 
       {/* <FAQ /> */}
     </div>
