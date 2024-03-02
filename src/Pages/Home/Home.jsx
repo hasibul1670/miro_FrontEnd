@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet-async";
-import FAQ from "./FAQ";
-import HeroSection from "./HeroSection";
-import TrustedSection from "./TrustedSection";
 import FeatureSection from "./FeatureSection";
+import HeroSection from "./HeroSection";
+import HybridWorkSection from "./HybridWorkSection";
+import TrustedSection from "./TrustedSection";
 
 const Home = () => {
   return (
@@ -14,6 +14,7 @@ const Home = () => {
       <HeroSection />
       <TrustedSection />
       <FeatureSection />
+      <HybridWorkSection />
 
       {/* <FAQ /> */}
     </div>
