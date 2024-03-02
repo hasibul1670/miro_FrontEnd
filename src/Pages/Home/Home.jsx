@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="bg-base-300">
       <Helmet>
-        <title> Demo | Home</title>
+        <title> miro | Home </title>
       </Helmet>
 
       <Banner />

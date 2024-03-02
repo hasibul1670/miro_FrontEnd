@@ -1,45 +1,10 @@
-/* eslint-disable no-unused-vars */
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../../Providers/AuthProvider";
-import { useAppSelector } from "../../redux/hook";
+import NavbarLeftButtons from "./ButtonComponent";
 import Dropdown from "./Dropdown";
 
 const NavBar = () => {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
-  const handleDrawerToggle = () => {
-    setIsDrawerOpen(!isDrawerOpen);
-    document.body.classList.toggle("drawer-open");
-  };
-
-  const handleCartSliderClose = () => {
-    setIsDrawerOpen(false);
-    document.body.classList.remove("drawer-open");
-  };
-
   const [open, setOpen] = useState(false);
-
-  const { book } = useAppSelector((state) => state.cart);
-
-  const totalQuantity = () => {
-    let totalQuantity = 0;
-    book.forEach((book) => {
-      totalQuantity += book.quantity;
-    });
-
-    return totalQuantity;
-  };
-
-  const { user, logOut } = useContext(AuthContext);
-
-  const handleLogOut = () => {
-    logOut();
-  };
-
-  const email = localStorage.getItem("email");
-  const role = localStorage.getItem("role");
-
   return (
     <div className="bg-white">
       <div className="w-full mx-auto  border-b 2xl:max-w-7xl">
@@ -96,18 +61,9 @@ const NavBar = () => {
             >
               Pricing
             </Link>
-            <div className="inline-flex items-center gap-2 list-none lg:ml-auto">
-              <Link to="/login">
-                <button className="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-yellow-400 rounded-full group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-gray-700 active:bg-gray-800 active:text-white focus-visible:outline-black">
-                  Sign in
-                </button>
-              </Link>
 
-              <Link to="/signup">
-                <button className="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-black rounded-full group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-gray-700 active:bg-gray-800 active:text-white focus-visible:outline-black ">
-                  Sign up
-                </button>
-              </Link>
+            <div className="inline-flex items-center gap-2 list-none lg:ml-auto">
+              <NavbarLeftButtons />
             </div>
           </nav>
         </div>
