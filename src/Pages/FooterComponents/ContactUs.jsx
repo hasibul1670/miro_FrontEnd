@@ -58,7 +58,7 @@ const ContactUs = () => {
       <Helmet>
         <title> E-Medicine | Contact Us</title>
       </Helmet>
-      <div className="hero min-h-screen bg-base-200">
+      <div className="hero min-h-screen bg-white">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className=" text-center ">
             <h1 className="text-5xl font-bold">

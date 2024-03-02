@@ -1,17 +1,19 @@
 import { Helmet } from "react-helmet-async";
 import FAQ from "./FAQ";
 import HeroSection from "./HeroSection";
+import TrustedSection from "./TrustedSection";
 
 const Home = () => {
   return (
-    <div className="bg-base-300">
+    <div className="bg-white">
       <Helmet>
         <title> miro | Home </title>
       </Helmet>
 
       <HeroSection />
+      <TrustedSection />
 
-      <FAQ />
+      {/* <FAQ /> */}
     </div>
   );
 };

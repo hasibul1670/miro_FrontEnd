@@ -17,7 +17,7 @@ const App = () => {
     <div>
       <userDataContext.Provider value={[loggInUser]}>
         <Provider store={store}>
-          <div className="max-w-screen-4xl mx-auto bg-base-300  ">
+          <div className="max-w-screen-4xl mx-auto bg-white  ">
             <RouterProvider router={router} />
           </div>
         </Provider>
