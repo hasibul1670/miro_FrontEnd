@@ -51,7 +51,7 @@ export const router = createBrowserRouter([
   },
 
   {
-    path: "*", // Match any unrecognized path
-    element: <NotFound></NotFound>, // Replace "NotFound" with your own component
+    path: "*", 
+    element: <NotFound></NotFound>, 
   },
 ]);
