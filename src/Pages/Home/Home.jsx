@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
-import Banner from "./Banner";
 import FAQ from "./FAQ";
+import HeroSection from "./HeroSection";
 
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
         <title> miro | Home </title>
       </Helmet>
 
-      <Banner />
+      <HeroSection />
 
       <FAQ />
     </div>

@@ -63,6 +63,27 @@ const NavBar = () => {
             </Link>
 
             <div className="inline-flex items-center gap-2 list-none lg:ml-auto">
+              {/* <Link to="/changeLanguage">
+                <button className="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-black bg-white rounded-full group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-white active:bg-blue-800 active:text-white focus-visible:outline-black ">
+                  <CiGlobe className="text-xl font-bold" /> EN
+                </button>
+              </Link>
+              <Link to="/contactSales">
+                <button className="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-black bg-white rounded-full group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-white active:bg-gray-800 active:text-white focus-visible:outline-black ">
+                  Contact Sales
+                </button>
+              </Link>
+              <Link to="/login">
+                <button className="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-black bg-white rounded-full group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-white active:bg-gray-800 active:text-white focus-visible:outline-black ">
+                  Login
+                </button>
+              </Link>
+              <Link to="/signup">
+                <button className="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-blue-500 rounded-full group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-gray-700 active:bg-gray-800 active:text-white focus-visible:outline-black">
+                  Sign up for <FaLongArrowAltRight className="mt-1 ml-1" />
+                </button>
+              </Link> */}
+
               <NavbarLeftButtons />
             </div>
           </nav>
