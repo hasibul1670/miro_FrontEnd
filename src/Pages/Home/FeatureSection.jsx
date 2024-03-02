@@ -1,8 +1,8 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
-import CardWithoutImage from "../Shared/CardWithoutImage";
 import CommonContainer from "../Shared/CommonContainer";
+import { CardWithoutImage } from "../Shared/CardWithoutImage";
 
 const FeatureSection = () => {
   const cardData = [

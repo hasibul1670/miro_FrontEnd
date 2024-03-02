@@ -1,68 +1,156 @@
+import {
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaYoutubeSquare,
+} from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="mt-2">
-      <footer className="footer footer-center p-10 bg-gray-600 text-base-content rounded">
-        <div className="grid grid-flow-col gap-4 text-white">
-          <Link to="/about-us" className="link link-hover ">
-            About us
-          </Link>
-          <Link to="/contactUs" className="link link-hover">
-            Contact
-          </Link>
-          <Link to="/blogs" className="link link-hover">
-            Blogs
-          </Link>
-          <Link to="/news" className="link link-hover">
-            News
-          </Link>
-          <Link to="/events" className="link link-hover">
-            events
-          </Link>
-        </div>
-        <div>
-          <div className="grid grid-flow-col gap-4 text-white">
-            <a href="https://www.facebook.com/hasibulcse" target="blank">
-              <svg
-                xmlns="https://twitter.com/?lang=en"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-              </svg>
-            </a>
-            <a href="https://www.facebook.com/hasibulcse" target="blank">
-              <svg
-                xmlns="https://www.facebook.com/"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-              </svg>
-            </a>
-            <a href="https://www.facebook.com/hasibulcse" target="blank">
-              <svg
-                xmlns=""
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-              </svg>
-            </a>
+    <div className="mt-2 sm:flex sm:justify-center">
+      <footer
+        className="bg-indigo-950 w-full	  "
+        aria-labelledby="footer-heading"
+      >
+        <h2 id="footer-heading" className="sr-only">
+          Footer
+        </h2>
+        <div className="px-5 py-12 mx-auto max-w-7xl lg:py-16 md:px-12 lg:px-20 ">
+          <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+            <div className="flex flex-col ">
+              <p className="w-full mt-2 text-xl font-bold text-white">
+                Scan. Detect. Remove.
+              </p>
+              <div className="flex gap-4 my-5">
+                {" "}
+                <FaTwitterSquare className="text-white text-3xl" />
+                <FaFacebookSquare className="text-white text-3xl" />
+                <FaYoutubeSquare className="text-white text-3xl" />
+              </div>
+              <div className="flex gap-6 underline text-xs text-white">
+                <Link to="/privacy">Privacy Policy </Link>
+                <Link to="termsOfService">Terms of Service </Link>
+              </div>
+
+              <p className="w-full mt-2 text-xs  text-white">
+                Copyright © 2022 Certo Software Limited | Registered in England
+                & Wales No. 10072356
+              </p>
+              <p className="w-full mt-2 text-xs  text-white">
+                Designed & developed by{" "}
+                <Link
+                  to="https://hasibul-islam365.netlify.app/"
+                  className="underline"
+                >
+                  Hasibul Islam{" "}
+                </Link>
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
+              <div className="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3 className="font-semibold leading-6 uppercase text-white">
+                    Miro.
+                  </h3>
+                  <hr />
+                  <ul role="list" className="mt-4 space-y-3">
+                    <li>
+                      <a
+                        href="/iphone"
+                        className="text-sm font-bold text-yellow-400 hover:text-white"
+                      >
+                        - Android
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/android"
+                        className="text-sm font-bold text-yellow-400 hover:text-white"
+                      >
+                        - Android
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/help"
+                        className="text-sm font-bold text-yellow-400 hover:text-white"
+                      >
+                        - Help
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/about"
+                        className="text-sm font-bold text-yellow-400 hover:text-white"
+                      >
+                        - About
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/insights"
+                        className="text-sm font-bold text-yellow-400 hover:text-white"
+                      >
+                        - Insights
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="hidden bg-yellow-600  p-4 rounded-2xl lg:justify-end md:grid md:grid-cols-1">
+                <div className="w-full mt-12 md:mt-0">
+                  <div className="mt-8 lg:justify-end xl:mt-0">
+                    <h3 className="font-semibold leading-6 uppercase text-black">
+                      Sign up to our newsletter
+                    </h3>
+                    <p className="mt-4 text-sm font-light text-white lg:ml-auto">
+                      Receive the latest mobile security news, exclusive
+                      discounts & offers straight to your inbox!
+                    </p>
+                    <div className="inline-flex items-center gap-2 mt-12 list-none lg:ml-auto">
+                      <form
+                        className="flex flex-col items-center justify-center max-w-sm mx-auto"
+                        action=""
+                      >
+                        <div className="flex flex-col w-full gap-1 mt-3 sm:flex-row">
+                          <input
+                            name="email"
+                            type="email"
+                            className="block w-full px-4 py-2 text-sm font-medium text-gray-800 placeholder-gray-400 bg-white border border-gray-300 rounded-full font-spline focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600/50 disabled:opacity-50"
+                            placeholder="Email Address"
+                            required=""
+                          />
+                          <button
+                            type="button"
+                            className="items-center inline-flex  justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black"
+                          >
+                            <div style={{ position: "relative" }}></div>
+                            Submit
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div>
-          <p className="text-white font-bold">
-            Copyright © 2023 - All right reserved by
-            <Link className="text-cyan-300 underline" target="_blank" to="https://hasibul-islam365.netlify.app/"> E-Medicine</Link>
-          </p>
+
+        <div className="px-5 py-12 mx-auto border-t max-w-7xl sm:px-6 md:flex md:items-center md:justify-between lg:px-20">
+          <div className="mt-8 md:mt-0 md:order-1">
+            <span className="mt-2 text-sm font-light text-white">
+              Copyright © 2024
+              <a
+                href="https://hasibul-islam365.netlify.app/"
+                className="mx-2 text-yellow-300 font-bold underline hover:text-white"
+                rel="noopener noreferrer"
+              >
+                Hasibul Islam
+              </a>
+            </span>
+          </div>
         </div>
       </footer>
     </div>
