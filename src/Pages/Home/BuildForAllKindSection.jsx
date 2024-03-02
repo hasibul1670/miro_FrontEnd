@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { GiCheckMark } from "react-icons/gi";
 import { Link } from "react-router-dom";
@@ -9,10 +9,27 @@ import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import graphicsLogo from "../../assets/home/GraphicsLogo.png";
 import heroSectionImage from "../../assets/home/uxdesignImage.png";
 import CommonContainer from "../Shared/CommonContainer";
+import TabButtonComponent from "../Shared/TabButtonComponent";
 const BuildForAllKindSection = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+const buttonLabels = [
+  'UX & Design',
+  'Marketing',
+  'Product Management',
+  'Engineering',
+  'Consultants',
+  'Agile Coaches',
+  'Sales',
+];
+
+
+  const [activeButton, setActiveButton] = useState(null);
+
+  const handleButtonClick = (index) => {
+    setActiveButton(index);
+  };
 
   return (
     <div>
@@ -21,6 +38,8 @@ const BuildForAllKindSection = () => {
           className="text-start"
           heading={"Built for all kinds of teams"}
         />
+     
+        <TabButtonComponent buttonLabels={buttonLabels} />
         <div className="lg:grid mt-10 lg:grid-cols-2 p-10 mx-auto flex flex-col-reverse">
           <div className="lg:w-full w-full p-5	 ">
             <ChecklistItem>Build low-fi wireframes</ChecklistItem>
@@ -53,7 +72,7 @@ const BuildForAllKindSection = () => {
           </div>
 
           <div
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-duration="800"
             className="w-1/8 mb-10 md:mb-0 mx-auto"
           >
