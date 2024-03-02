@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import FAQ from "./FAQ";
 import HeroSection from "./HeroSection";
 import TrustedSection from "./TrustedSection";
+import FeatureSection from "./FeatureSection";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
 
       <HeroSection />
       <TrustedSection />
+      <FeatureSection />
 
       {/* <FAQ /> */}
     </div>
